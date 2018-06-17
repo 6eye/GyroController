@@ -2,8 +2,8 @@
 //Single client server
 
 //Store all setting in varaiables for easier modification
-const char* ssid     = "NAME";      // SSID | WiFi network name
-const char* password = "PASSWORD";      // Network Password
+const char* ssid     = "";      // SSID | WiFi network name
+const char* password = "";      // Network Password
 
 const int   port = 8080;           
 WiFiServer server(8080);  //Set server port for 8080 | 1024-49151 
