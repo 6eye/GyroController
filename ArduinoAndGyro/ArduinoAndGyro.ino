@@ -120,7 +120,7 @@
 
 
       
-
+      sSerial.print('(');
       sSerial.print(accel_x - cal_accel_x);
       sSerial.print(' ');
       sSerial.print(accel_y - cal_accel_y);
@@ -136,6 +136,7 @@
       sSerial.print(' ');
       sSerial.print(millis());
       sSerial.print(';');
+            sSerial.print(')');
       sSerial.println();
       
       delay(10); //wait 10ms | We got 30 frames per second in blender =0.034s for frame | We wait 0.001s | One loop won't take more then 0.002s that gives us about 15 messurments per frame
