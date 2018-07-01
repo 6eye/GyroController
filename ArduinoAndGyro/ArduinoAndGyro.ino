@@ -10,10 +10,9 @@
     int time_milis; //time in mls
 
      float accel_convert_value =  1.0; //Value for converting raw data || 1 to proces data later on pc
-  
-    
+    int time1;
     void setup() {
-      
+      Serial.begin(115200);
       sSerial.begin(115200); //Start serial comunication on pins 10|11 at 115200 bits/sec
       
       Wire.begin(); //Start I2C data transfer to gyro
@@ -39,9 +38,14 @@
       gyro_y = Wire.read()<<8 | Wire.read(); 
       gyro_z = Wire.read()<<8 | Wire.read();
       
-      // Send Data to Arduino
-      
+      // Send Data to Arduino for observing refistrated values
 
+      Serial.print(' ');
+      Serial.print(accel_x);
+      Serial.println();       
+      time1=millis();
+      
+      sSerial.print('(');
       sSerial.print(accel_x/accel_convert_value,16);
       sSerial.print(' ');
       sSerial.print(accel_y/accel_convert_value,16);
@@ -55,9 +59,12 @@
       sSerial.print(' ');
       sSerial.print(gyro_z);
       sSerial.print(' ');
+      sSerial.print(millis());
+      sSerial.print(' ');
       sSerial.print(';');
+      sSerial.print(')');
       sSerial.println();
       
-      delay(10); //wait 10ms | We got 30 frames per second in blender =0.034s for frame | We wait 0.001s | One loop won't take more then 0.002s that gives us about 15 messurments per frame
-    }
+      delay(5); //wait 5ms
+      }
 
