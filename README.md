@@ -1,10 +1,8 @@
 # GyroController
 ## Physical Controller (Arduino + MPU 6050+ ESP8266 ) for real time manipulation of objects in Blender
 Created also by:
-
-Piote Kędra https://github.com/PiotrKedra
-
-Mateusz Grzeliński  https://github.com/Mateusz-Grzelinski
+- Piote Kędra [Repo](https://github.com/PiotrKedra)
+- Mateusz Grzeliński  [Repo](https://github.com/Mateusz-Grzelinski)
 
 #### *Blender addon by Mateusz Grzelińsi https://github.com/Mateusz-Grzelinski/handheldcamera*
 
