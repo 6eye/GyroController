@@ -16,6 +16,7 @@ User using our conttroller could for example animate camera movement, transition
 
 ## Future:
 Data collection from sensors is working and can be used in future project.
+
 **Project devlopment has been stoped at the moment.**
 
 ## Conclusion
