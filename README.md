@@ -8,11 +8,11 @@ Created also by:
 
 
 
-## Goals:
+## Goals
 We wanted to create controller that allows user to physicly steer and control Blender object in real time.
 User using our conttroller could for example animate camera movement, transitioning his normal camera operation skills directly in to virtual enviroment. That can possibly save a lot of time and allow to create reallife camere behaviour in animations.
 
-## Future:
+## Future
 Data collection from sensors is working and can be used in future project.
 
 **Project devlopment has been freezed.**
