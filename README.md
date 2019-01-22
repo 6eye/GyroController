@@ -15,7 +15,7 @@ User using our conttroller could for example animate camera movement, transition
 ## Future
 Data collection from sensors is working and can be used in future project.
 
-**Project devlopment has been freezed.**
+**Project devlopment has been ceased.**
 
 ## Conclusion
 Biggest problem we had encauntered was that reallife messurment are not accuarate enugh to simply base on them for future calculations. Definetly collected data needs to be postprocessed what we did't have time for. Not without reason it's beeing called raw data. Probably some Interpolation and damping functions could improve resoults.
